@@ -81,6 +81,9 @@
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
+      <div class="is-centered">
+      <img src="./static/images/collage_2.png">
+    </div>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
@@ -132,8 +135,6 @@
     </div>
           
             </div>
-  <div class="columns is-centered">
-       
           </div>
           <br>
           <!--/ Interpolating. -->
@@ -145,6 +146,44 @@
           <!--/ Re-rendering. -->
   
         </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Download Data</h2>
+            <div class="content has-text-justified">
+          <ul>
+            <div class="is-centered has-text-justified">
+            <li><a href="">data_cleaning</a>(3.84 GB) contains all 32 of the captured scenes. </li>
+          <ul>
+            <li><a href="">scan_2</a> (151.7 MB) each scan_number contains the related data for that scan. </li>
+            
+            <ul>
+              <li><a href="">amodal</a> (4.3 MB) contains all the amodal bounding box .png files. </li>
+              <li><a href="">cam_dict.json</a> (61 KB) contains the intrinsic and extrinsic camera parameters used for camera callibration. </li>
+              <li><a href="">images</a> (146.2 MB) contains the 1002 x 1002 pixel images of the scene in .png format.</li>
+              <li><a href="">instance_segmentation.json</a> (4 KB) contains mappings from the rgb colors to the object identifier. </li>
+              <li><a href="">mask</a> (1.1 MB) contains the image segmentation masks using the corresponding rgb values for each object from the instance_segmentation.json.</li>
+              <li><a href="">scan_2_TF_matrix.json</a> (4 KB) contains the final transformation matrix for each object from the ground truth state to the corresponding orientation in the scene.</li>
+            </ul>
+            </ul>
+          </ul>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+
+          <div class="column is-four-fifths">
+
+            <h2 class="title is-3">Methodology</h2>
+            <div class="content has-text-justified">
+              <p>
+                We provide 34 real-world scenes. We used a Samsung Note9 with a 12-megapixel camera to capture the scenes, utilizing the raw option in the pro-mode to capture raw images. The original images are 3008 × 3008 pixels with 16-bit depth. We converted the raw format to .png for lossless compression and downscaled it to 1002 × 1002 pixels. Below are the steps we took to collect the dataset.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+        <img src="./static/images/research_poster.png">
+      </div>
         </div>
   
           
