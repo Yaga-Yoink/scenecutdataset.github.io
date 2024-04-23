@@ -111,11 +111,11 @@
   
       <!-- Animation. -->
        <div class="column is-full-width">
-          <h3 class="title is-4 is-centered has-text-centered">List of Images</h3>
+          <h3 class="title is-4 is-centered has-text-centered">Scenes</h3>
           <img src="./static/images/list_scenes.png">
-          <h3 class="title is-4 is-centered has-text-centered">List of Objects</h3>
+          <h3 class="title is-4 is-centered has-text-centered">Meshes</h3>
           <img src="./static/images/list_objects.png">
-          <h3 class="title is-4 is-centered has-text-centered">Reconstructions</h3>
+          <h3 class="title is-4 is-centered has-text-centered">Sample Meshes</h3>
           <div class="embed-responsive embed-responsive-16by9">
             <div class="columns is-centered has-text-centered">
               
@@ -152,17 +152,49 @@
             <div class="content has-text-justified">
           <ul>
             <div class="is-centered has-text-justified">
-            <li><a href="">data_cleaning</a>(3.84 GB) contains all 32 of the captured scenes. </li>
+            <li><a href="">real_scan</a>(3.84 GB) contains all 32 of the captured scenes. </li>
           <ul>
-            <li><a href="">scan_2</a> (151.7 MB) each scan_number contains the related data for that scan. </li>
-            
+            <li><a href="">scan_3</a> each scan_number contains the related data for that scan. </li>
             <ul>
-              <li><a href="">amodal</a> (4.3 MB) contains all the amodal bounding box .png files. </li>
-              <li><a href="">cam_dict.json</a> (61 KB) contains the intrinsic and extrinsic camera parameters used for camera callibration. </li>
               <li><a href="">images</a> (146.2 MB) contains the 1002 x 1002 pixel images of the scene in .png format.</li>
+              <ul>
+              <li>0001.png</li>
+              <li>0002.png</li>
+            </ul>
+            <li><a href="">mask</a> (1.1 MB) contains the image segmentation masks using the corresponding rgb values for each object from the instance_segmentation.json.</li>
+            <ul>
+              <li>0001.png</li>
+              <li>0002.png</li>
+            </ul>
+              <li><a href="">amodal</a> (4.3 MB) contains all the amodal bounding box .png files. </li>
+              <ul>
+                <li>milk</li>
+                <ul>
+                  <li>0001.png</li>
+                  <li>...png</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>PurpleDude</li>
+                <ul>
+                  <li>
+                    0001.png
+                  </li>
+                  <li>...png</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Appa</li>
+                <ul>
+                  <li>
+                    0001.png
+                  </li>
+                  <li>...png</li>
+                </ul>
+              </ul>
               <li><a href="">instance_segmentation.json</a> (4 KB) contains mappings from the rgb colors to the object identifier. </li>
-              <li><a href="">mask</a> (1.1 MB) contains the image segmentation masks using the corresponding rgb values for each object from the instance_segmentation.json.</li>
-              <li><a href="">scan_2_TF_matrix.json</a> (4 KB) contains the final transformation matrix for each object from the ground truth state to the corresponding orientation in the scene.</li>
+              <li><a href="">scan_3_TF_matrix.json</a> (4 KB) contains the final transformation matrix for each object from the ground truth state to the corresponding orientation in the scene.</li>
+              <li><a href="">cam_dict.json</a> (61 KB) contains the intrinsic and extrinsic camera parameters used for camera callibration. </li>
             </ul>
             </ul>
           </ul>
